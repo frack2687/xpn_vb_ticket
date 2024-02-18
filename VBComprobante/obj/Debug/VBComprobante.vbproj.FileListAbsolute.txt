@@ -1,0 +1,125 @@
+c:\users\moni\documents\visual studio 2012\Projects\VBComprobante\VBComprobante\bin\Debug\VBComprobante.exe.config
+c:\users\moni\documents\visual studio 2012\Projects\VBComprobante\VBComprobante\bin\Debug\VBComprobante.exe
+c:\users\moni\documents\visual studio 2012\Projects\VBComprobante\VBComprobante\bin\Debug\VBComprobante.pdb
+c:\users\moni\documents\visual studio 2012\Projects\VBComprobante\VBComprobante\bin\Debug\VBComprobante.xml
+c:\users\moni\documents\visual studio 2012\Projects\VBComprobante\VBComprobante\obj\Debug\VBComprobante.Resources.resources
+c:\users\moni\documents\visual studio 2012\Projects\VBComprobante\VBComprobante\obj\Debug\VBComprobante.vbproj.GenerateResource.Cache
+c:\users\moni\documents\visual studio 2012\Projects\VBComprobante\VBComprobante\obj\Debug\VBComprobante.exe
+c:\users\moni\documents\visual studio 2012\Projects\VBComprobante\VBComprobante\obj\Debug\VBComprobante.xml
+c:\users\moni\documents\visual studio 2012\Projects\VBComprobante\VBComprobante\obj\Debug\VBComprobante.pdb
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\VBComprobante.exe.config
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\obj\Debug\VBComprobante.exe
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\obj\Debug\VBComprobante.xml
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\obj\Debug\VBComprobante.pdb
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\VBComprobante.exe
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\VBComprobante.pdb
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\VBComprobante.xml
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\obj\Debug\VBComprobante.Resources.resources
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\obj\Debug\VBComprobante.vbproj.GenerateResource.Cache
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\itextsharp.dll
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\obj\Debug\VBComprobante.Form1.resources
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\aerolineas.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\cadenaoriginal_3_3.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\certificadodedestruccion.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\cfdiregistrofiscal.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\ComercioExterior11.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\consumodecombustibles.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\consumodeCombustibles11.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\detallista.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\divisas.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\donat11.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\ecc11.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\ecc12.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\GastosHidrocarburos10.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\iedu.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\implocal.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\ine11.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\IngresosHidrocarburos.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\leyendasFisc.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\nomina12.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\notariospublicos.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\obrasarteantiguedades.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\pagoenespecie.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\Pagos10.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\pfic.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\renovacionysustitucionvehiculos.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\servicioparcialconstruccion.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\terceros11.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\TuristaPasajeroExtranjero.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\utilerias.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\valesdedespensa.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\vehiculousado.xslt
+C:\Users\Faustino\OneDrive\Desarrollo\Joselin\VB\VBComprobante280619\VBComprobante\VBComprobante\bin\Debug\XSLT\ventavehiculos11.xslt
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\bin\Debug\VBComprobante.exe.config
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.exe
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.xml
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.pdb
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\bin\Debug\VBComprobante.exe
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\bin\Debug\VBComprobante.pdb
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\bin\Debug\VBComprobante.xml
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.vbprojResolveAssemblyReference.cache
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.Form1.resources
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.Resources.resources
+C:\Users\Faustino\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.GenerateResource.Cache
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\bin\Debug\VBComprobante.exe.config
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.exe
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.xml
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.pdb
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\bin\Debug\VBComprobante.exe
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\bin\Debug\VBComprobante.pdb
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\bin\Debug\VBComprobante.xml
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.vbprojResolveAssemblyReference.cache
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.Form1.resources
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.Resources.resources
+C:\Users\frack\Documents\Advansys\Proyectos\Genera PDF de XML Ver, 3.3\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.GenerateResource.Cache
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\bin\Debug\itextsharp.dll
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\obj\Debug\VBComprobante.vbprojResolveAssemblyReference.cache
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.GenerateResource.Cache
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\bin\Debug\XPN.exe.config
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\bin\Debug\XPN.exe
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\bin\Debug\XPN.pdb
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\bin\Debug\XPN.xml
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\obj\Debug\XPN.Form1.resources
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\obj\Debug\XPN.Resources.resources
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\obj\Debug\XPN.exe
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\obj\Debug\XPN.xml
+C:\Users\frack\Documents\Advansys\Proyectos\XPN\4.0\VB\VBComprobante\obj\Debug\XPN.pdb
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.exe.config
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.exe
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.pdb
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.xml
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.AssemblyReference.cache
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.Form1.resources
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.Resources.resources
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.GenerateResource.cache
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.CoreCompileInputs.cache
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.CopyComplete
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.exe
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.xml
+C:\Users\frack\Documents\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.pdb
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.exe.config
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.exe
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.pdb
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.xml
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.AssemblyReference.cache
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.Form1.resources
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.Resources.resources
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.GenerateResource.cache
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.CoreCompileInputs.cache
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.CopyComplete
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.exe
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.xml
+C:\Users\frack\OneDrive\Escritorio\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.pdb
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.exe
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.exe.config
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.pdb
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\bin\Debug\XPN.xml
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.AssemblyReference.cache
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.Form1.resources
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.Resources.resources
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.GenerateResource.cache
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.CoreCompileInputs.cache
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\VBComprobante.vbproj.CopyComplete
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.exe
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.xml
+C:\Users\frack\source\repos\XPN VB 4.003022023\VB\VBComprobante\obj\Debug\XPN.pdb

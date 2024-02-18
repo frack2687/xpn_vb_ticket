@@ -1,0 +1,2011 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+XPN
+</name>
+</assembly>
+<members>
+<member name="T:XPN.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:XPN.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:XPN.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:XPN.My.Resources.Resources.icons8_delete_15">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:XPN.My.Resources.Resources.icons8_picture_100">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:XPN.BarcodeQRCode1">
+
+A QRCode implementation based on the zxing code.
+ @author Paulo Soares
+ @since 5.0.2
+</member>
+<member name="M:XPN.BarcodeQRCode1.#ctor(System.String,System.Int32,System.Int32,System.Collections.Generic.IDictionary{iTextSharp.text.pdf.qrcode.EncodeHintType,System.Object})">
+
+* Creates the QR barcode. The barcode is always created with the smallest possible     size and is then stretched
+* to the width and height given. Set the width and height to 1 to get an unscaled barcode.
+* @param content the text to be encoded
+ * @param width the barcode width
+  * @param height the barcode height
+   * @param hints modifiers to change the way the barcode is create. They can be EncodeHintType.ERROR_CORRECTION
+   * and EncodeHintType.CHARACTER_SET. For EncodeHintType.ERROR_CORRECTION the values can be ErrorCorrectionLevel.L, M, Q, H.
+   * For EncodeHintType.CHARACTER_SET the values are strings and can be Cp437, Shift_JIS and ISO-8859-1 to ISO-8859-16. The default value is
+   * ISO-8859-1.
+   * @throws WriterException
+    */
+</member>
+<member name="M:XPN.BarcodeQRCode1.GetImage">
+/** Gets an Image with the barcode.
+* @return the barcode Image
+* @throws BadElementException on error
+*/
+</member>
+<member name="P:XPN.Comprobante.Version">
+ <summary>
+ <value>Requerido.</value>  
+ <remarks> Atributo requerido con valor prefijo a 3.3 que indica la versión del estándar bajo el que se encuentra expresado el comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Serie">
+ <summary>
+ Opcional.
+ </summary>
+ <remarks>Este atributo acepta una cadena de caracteres.</remarks>
+</member>
+<member name="P:XPN.Comprobante.Folio">
+ <summary>
+ Opcional.
+ <remarks>Este atributo acepta una cadena de caracteres.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Fecha">
+ <summary>
+ Requerido.
+ <remarks>Se expresa en la forma AAAA-MM-DD:Thh:mm:ss</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Sello">
+ <summary>
+ Requerido.
+ <remarks>Debe ser expresado como una cadeba de texto en formato Base 64.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.FormaPago">
+ <summary>
+ Opcional.
+ <remarks>Expresa la clave de la forma de pago.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.NoCertificado">
+ <summary>
+ Requerido.
+ <remarks>Expresa el numero de serie del certificado de sello digital que amremarks al comprobante de acuerdo con el acuse correspondiente a 20 posiciones otorgadas por el sistema del SAT.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Certificado">
+ <summary>
+ Requerido.
+ <remarks>El certificado del sello digital que amremarks al comprobante, como texto en formato base 64.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.CondicionesDePago">
+ <summary>
+ Opcional.
+ <remarks>Atributo condicional para expresar las condiciones comerciales aplicables para el pago del CFDI. Este atributo puede ser condicionado mediante atributos o complementos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.SubTotal">
+ <summary>
+ Requerido.
+ <remarks>Representa la suma de los conceptos antes de descuentos e impuestos. No se permiten valores negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Descuento">
+ <summary>
+ Opcional.
+ <remarks>Representa el importe total de los descuentos aplicables antes de impuestos. No se permiten valores negativos. Se debe aplicar cuando existan conceptos con descuento.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Moneda">
+ <summary>
+ Requerido.
+ <remarks>Requerido para identificar la clave de la moneda utilizada para expresar los montos. Cuando se usa moneda nacional se registra MXN.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.TipoCambio">
+ <summary>
+ Opcional.
+ <remarks>Es requerido cuando la clave de moneda es distinta de MXN y de XXX. </remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Total">
+ <summary>
+ Requerido.
+ <remarks>Representa la suma del subtotal, menos los descuentos aplicables, mas las contribuciones recibidas(impuestos trasladados - federales o locales, derechos, productos, aprovechamientos, aportaciones de seguridad social, contribuciones de mejoras) menos los impuestos retenidos.No se permiten valores negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.TipoDeComprobante">
+ <summary>
+ Requerido.
+ <remarks>La clave del efecto del comprobante fiscal para el contribuyente emisor.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Exportacion">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para expresar si el comprobante ampara una operación de exportación.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.MetodoPago">
+ <summary>
+ Opcional.
+ <remarks>Atributos condicional para precisar la clave del metodo de pago que aplica para este CFDI.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.LugarExpedicion">
+ <summary>
+ Requerido.
+ <remarks>Incorpora el código postal del lugar de expedición del comprobante. (Domicilio de la matriz o de la sucursal)</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Confirmacion">
+ <summary>
+ Opcional.
+ <remarks>Atributo condicional para registrar la clave de confirmación que entrege el PAC para expedir el comprobante con importes grandes.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.InformacionGlobal">
+ <summary>
+ Opcional.
+ <remarks>Nodo opcional para precisar la informacion de los comprobante relacionados.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.CfdiRelacionados">
+ <summary>
+ Opcional.
+ <remarks>Nodo opcional para precisar la informacion de los comprobante relacionados.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Emisor">
+ <summary>
+ Requerido.
+ <remarks>Nodo requerido para expresar la informacion del contribuyente emisor del comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Receptor">
+ <summary>
+ Requerido.
+ <remarks>Nodo requerido para precisar la información del contribuyente receptor del comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Conceptos">
+ <summary>
+ Requerido.
+ <remarks>Nodo requerido para listar los conceptos cubiertos por el comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Impuestos">
+ <summary>
+ Opcional.
+ <remarks>Nodo condicional para expresar el resumen de los impuestos aplicables.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Comprobante.Complemento">
+ <summary>
+ Opcional
+ <remarks>Nodo opcional donde se incluye el complemento TImbre Fiscal Digital de manera obligatoria y los nodos complementarios determinados por el SAT.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.InformacionGlobal.Periodicidad">
+// <summary>
+ <value>Requerido.</value>  
+ <para> Atributo requerido para expresar el período al que corresponde la información del comprobante global.</para>
+ </summary>
+</member>
+<member name="P:XPN.InformacionGlobal.Meses">
+ <summary>
+ <value>Requerido.</value>  
+ <para> Atributo requerido para expresar el mes o los meses al que corresponde la información del comprobante global.</para>
+ </summary>
+</member>
+<member name="P:XPN.InformacionGlobal.Ano">
+ <summary>
+ <value>Requerido.</value>  
+ <para> Atributo requerido para expresar el año al que corresponde la información del comprobante global.</para>
+ </summary>
+</member>
+<member name="P:XPN.CfdiRelacionados.TipoRelacion">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para indicar la clave de la relación que existe entre este que se esta generando y el o los CFDI previos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.CfdiRelacionados.CfdiRelacionado">
+ <summary>
+ Requerido.
+ <remarks>Nodo requerido para precisar la información de los comprobantes relacionados.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.CfdiRelacionado.UUID">
+ <summary>
+ Requerido.
+ <remarks>Atributos requerido remarks registrar el folio fiscal (UUID) de un CFDI relacionado con el presente comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Emisor.Rfc">
+ <summary>
+ Requerido.
+ <remarks>Atributo para precisar la clave del Registro Federal de Contribuyentes.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Emisor.Nombre">
+ <summary>
+ Opcional.
+ <remarks>Atributo opcional para registrar el nombre, denominación o razón social del contribuyente emisor del comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Emisor.RegimenFiscal">
+ <summary>
+ Requerido
+ <remarks>Atributo requerido para incorporar la clave del régimen del contribuyente emisor al que aplicara el efecto fiscal de este comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Emisor.FacAtrAdquirente">
+ <summary>
+ <value>Requerido</value>
+ <para>Atributo condicional para expresar el número de operación proporcionado por el SAT cuando se trate de un comprobante a través de un PCECFDI o un PCGCFDISP.</para>
+ </summary>
+</member>
+<member name="P:XPN.Receptor.Rfc">
+ <summary>
+ Requerido.
+ <remarks>Atributo para precisar la clave del Registro Federal de Contribuyentes.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Receptor.Nombre">
+ <summary>
+ Opcional.
+ <remarks>Atributo opcional para registrar el nombre, denominación o razón social del contribuyente receptor del comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Receptor.DomicilioFiscalReceptor">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para registrar el código postal del domicilio fiscal del receptor del comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Receptor.ResidenciaFiscal">
+ <summary>
+ Opcional.
+ <remarks>Es requerido cuando se incluye el complemento de comercio exterior o se registre el atributo NumRegIdTrib.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Receptor.RegimenFiscalReceptor">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para incorporar la clave del régimen fiscal del contribuyente receptor al que aplicará el efecto fiscal de este comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Receptor.NumRegIdTrib">
+ <summary>
+ Opcional.
+ <remarks>Es requerido cuando se incluye el complemento de comercio exterior.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Receptor.UsoCFDI">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para expresar la clave del uso que dará a esta factura el receptor del CFDI.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Conceptos.Concepto">
+<summary>
+ <value>Requerido.</value>
+ <para>Nodo requerido para expresar la informacion detallada de un bien o servicio amparado en el comprobante.</para>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.ClaveProdServ">
+ <summary>
+ Requerido. 
+ <remarks>Expresa la clave del producto o del servicio amparado por el presente concepto. Se deben utilizar las claves del catalogo de productos y servicios.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.NoIdentificacion">
+ <summary>
+ Opcional.
+ <remarks>Expresa el número de parte, identificador del producto o del servicio, SKU o equivalente.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.Cantidad">
+ <summary>
+ Requerido.
+ <remarks>Precisa la cantidad de bienes o servicios del tipo particular definido por el presente concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.ClaveUnidad">
+ <summary>
+ Requerido. 
+ <remarks>Se debe utilizar la clave del catalogo de unidades. La unidad debe corresponder con la descripción del concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.Unidad">
+ <summary>
+ Opcional.
+ <remarks>Precisa la unidad de medida propia de la operación del emisor, aplicable para la cantidad expresada en el concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.Descripcion">
+ <summary>
+ Requerido.
+ <remarks>Precisa la descripción del bien o servicio cubierto por el presente concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.ValorUnitario">
+ <summary>
+ Requerido.
+ <remarks>Precisa el valor o precio unitario del bien o servicio cubierto por el presente concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.Importe">
+ <summary>
+ Requerido.
+ <remarks>Precisa el importe total de los bienes o servicios del presente concepto. Debe ser equivalente al resultado de multiplicar la cantidad por el valor unitario expresado en el concepto. No se permiten valores negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.Descuento">
+ <summary>
+ Opcional. 
+ <remarks>Representa el importe de los descuentos aplicables al concepto. No se permiten valores negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.ObjetoImp">
+ <summary>
+ <value>Requerido.</value>
+ <para>Atributo requerido para expresar si la operación comercial es objeto o no de impuesto.</para>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.ACuentaTerceros">
+ <summary>
+ <value>Opcional.</value> 
+ <para>Nodo opcional para registrar información del contribuyente Tercero, a cuenta del que se realiza la operación.</para>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.Impuestos">
+ <summary>
+ Opcional. 
+ <remarks>Nodo opcional para capturar los impuestos aplicables al presente concepto. Cuando un concepto no registra un impuesto, implica que no es objeto del mismo.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.InformacionAduanera">
+ <summary>
+ Opcional. 
+ <remarks>Nodo opcional para introducir la información aduanera cuando se trate de ventas de primera mano de mercancias importadas o se trate de operaciones de comercion exterior con bienes o servicios.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.CuentaPredial">
+ <summary>
+ Opcional.
+ <remarks>Nodo opcional para asentar el número de cuenta predial  con el que fue registrado el inmueble, en el sistema catastra de la entidad federativa de que trate. </remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.Parte">
+ <summary>
+ Opcional. 
+ <remarks>Nodo opcional para expresar las partes o componentes que integran la totalidad del concepto expresado en el CFDI.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Concepto.Complemento">
+ <summary>
+ Opcional.
+ </summary>
+ <remarks>Complemento concepto que permite incorporar a los fabricantes, ensambladores o distribuidores autorizados de automóviles nuevos, así como aquéllos que importen automóviles para permanecer en forma definitiva en la franja fronteriza norte del país y en los Estados de Baja California, Baja California Sur y la región parcial del Estado de Sonora, a un Comprobante Fiscal Digital a través de Internet (CFDI) la clave vehicular que corresponda a la versión enajenada y el número de identificación vehicular que corresponda al vehículo enajenado.</remarks>
+</member>
+<member name="P:XPN.ACuentaTercerosC.RfcACuentaTerceros">
+ <summary>
+ <value>Requerido. </value>
+ <para>Atributo requerido para registrar la Clave del Registro Federal de Contribuyentes del contribuyente Tercero, a cuenta del que se realiza la operación.</para>
+ </summary>
+</member>
+<member name="P:XPN.ACuentaTercerosC.NombreACuentaTerceros">
+ <summary>
+ <value>Opcional. </value>
+ <para>Atributo requerido para registrar el nombre, denominación o razón social del contribuyente Tercero correspondiente con el Rfc, a cuenta del que se realiza la operación.</para>
+ </summary>
+</member>
+<member name="P:XPN.ACuentaTercerosC.RegimenFiscalACuentaTerceros">
+ <summary>
+ <value>Requerido. </value>
+ <para>Atributo requerido para incorporar la clave del régimen del contribuyente Tercero, a cuenta del que se realiza la operación.</para>
+ </summary>
+</member>
+<member name="P:XPN.ACuentaTercerosC.DomicilioFiscalACuentaTerceros">
+ <summary>
+ <value>Requerido. </value>
+ <para>Atributo requerido para incorporar el código postal del domicilio fiscal del Tercero, a cuenta del que se realiza la operación.</para>
+ </summary>
+</member>
+<member name="P:XPN.ImpuestosC.Traslados">
+ <summary>
+ Opcional.
+ <remarks>Nodo opcional para asentar los impuestos trasladados aplicables al presente concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ImpuestosC.Retenciones">
+ <summary>
+ Opcional.
+  <remarks>Nodo opcional para asentar los impuestos retenidos aplicables al presente concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.TrasladoC.Base">
+ <summary>
+ Requerido. 
+ <remarks>Atributo requerido para señalar la base para el calculo del impuesto, la determinación de la base se realiza de acuerdo con las disposiciones vigentes. No se permiten valores negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.TrasladoC.Impuesto">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para señalar la clave del tipo de impuesto traslado aplicable al concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.TrasladoC.TipoFactor">
+ <summary>
+ Requerido. 
+ <remarks>Atributo requerido para señalar la clave del tipo de factor que se aplica a la base del impuesto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.TrasladoC.TasaOCuota">
+ <summary>
+ Opcional
+ <remarks>Atributo condicional para señalar el valor de la tasa o cuota del impuesto que se traslada para el presente concepto. Es requerido cuando el atributo TipoFactor tenga una clava que corresponte a TasaOCuota.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.TrasladoC.Importe">
+ <summary>
+ Opcional.
+ <remarks>Atributo condicional para señalar el importe del impuesto trasladado que aplica al concepto. No se permiten valore negativos. Es requerido cuado TipoFactor sea TasaOCuota.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.RetencionC.Base">
+ <summary>
+ Requerido. 
+ <remarks>Atributo requerido para señalar la base para el calculo de la retención, la determinación de la base se realiza de acuerdo con las disposiciones fiscales vigentes. No se permiten valores negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.RetencionC.Impuesto">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para señalar la clave del tipo de impuesto retenido aplicable al concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.RetencionC.TipoFactor">
+ <summary>
+ Requerido. 
+ <remarks>Atributo requerido para señalar la clave del tipo de factor que se aplica a la base del impuesto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.RetencionC.TasaOCuota">
+ <summary>
+ Requerido
+ <remarks>Atributo requerido para señalar la tasa o cuota del impuesto que se retiene para el presente concepto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.RetencionC.Importe">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para señalar el importe del impuesto retenido que aplica al concepto. No se permiten valore negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.InformacionAduaneraC.NumeroPedimento">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para expresar el número del pedimento que ampara la importación del bien que se expresa en el siguiente formato: últimos 2 dígitos del año de validación seguidos por dos espacios, 2 dígitos de la aduana de despacho seguidos por dos espacios, 4 dígitos del número de la patente seguidos por dos espacios, 1 dígito que corresponde al último dígito del año en curso, salvo que se trate de un pedimento consolidado iniciado en el año inmediato anterior o del pedimento original de una rectificación, seguido de 6 dígitos de la numeración progresiva por aduana.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.CuentaPredialC.Numero">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para precisar el número de la cuenta predial del inmueble cubierto por el presente concepto, o bien para incorporar los datos de identificación del certificado de participación inmobiliaria no amortizable, tratándose de arrendamiento.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ParteC.ClaveProdServ">
+ <summary>
+ Requerido. 
+ <remarks>Expresa la clave del producto o del servicio amparado por la presente parte. Es requerido y deben utilizar las claves del cátalogo de productos y servicios, cuando los conceptos que registren por sus actividades corresponden con dichos conceptos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ParteC.NoIdentificacion">
+ <summary>
+ Opcional.
+ <remarks>Expresa el número de serie, número de parte del bien o identificador del producto o del servicio amparado por la presente parte.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ParteC.Cantidad">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para precisar la cantidad de bienes o servicios del tipo particular definido por la presente parte.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ParteC.Unidad">
+ <summary>
+ Opcional.
+ <remarks>Atributo opcional para precisar la unidad de medida propia de la operación del emisor, aplicable para la cantidad expresada en la parte. La unidad debe corresponder con la descripción de la parte.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ParteC.Descripcion">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para precisar la descripción del bien o servicio cubierto por la presente parte.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ParteC.ValorUnitario">
+ <summary>
+ Requerido.
+ <remarks>Atributo opcional para precisar el valor o precio unitario del bien o servicio cubierto por la presente parte. No se permiten valores negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ParteC.Importe">
+ <summary>
+ Opcional.
+ <remarks>Atributo opcional para precisar el importe total de los bienes o servicios de la presente parte. Debe ser equivalente al resultado de multiplicar la cantidad por el valor unitario expresado en la parte. No se permiten valores negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ParteC.InformacionAduanera">
+ <summary>
+ Opcional.
+ <remarks>Nodo opcional para introducir la información aduanera aplicable cuando se trate de ventas de primera mano de mercancías importadas o se trate de operaciones de comercio exterior con bienes o servicios.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Impuestos.TotalImpuestosRetenidos">
+ <summary>
+ Opcional.
+ <remarks>Atributo condicional para expresar el total de los impuestos retenidos que se desprenden de los conceptos expresados en el comprobante fiscal digital por Internet. No se permiten valores negativos. Es requerido cuando en los conceptos se registren impuestos retenidos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Impuestos.TotalImpuestosTrasladados">
+ <summary>
+ Opcional.
+ <remarks>Atributo condicional para expresar el total de los impuestos trasladados que se desprenden de los conceptos expresados en el comprobante fiscal digital por Internet. No se permiten valores negativos. Es requerido cuando en los conceptos se registren impuestos trasladados.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Impuestos.Retenciones">
+ <summary>
+ Opcional.
+ <remarks>Nodo condicional para capturar los impuestos retenidos aplicables. Es requerido cuando en los conceptos se registre algún impuesto retenido.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Impuestos.Traslados">
+ <summary>
+ Opcional.
+ <remarks>Nodo condicional para capturar los impuestos trasladados aplicables. Es requerido cuando en los conceptos se registre un impuesto trasladado.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Retencion.Impuesto">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para señalar la clave del tipo de impuesto retenido.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Retencion.Importe">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para señalar el monto del impuesto retenido. No se permiten valores negativos.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Traslado.Base">
+ <summary>
+ <value>Requerido.</value> 
+ <para>Atributo requerido para señalar la suma de los atributos Base de los conceptos del impuesto trasladado. No se permiten valores negativos.</para>
+ </summary>
+</member>
+<member name="P:XPN.Traslado.Impuesto">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para señalar la clave del tipo de impuesto traslado.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Traslado.TipoFactor">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para señalar la clave del tipo de factor que se aplica a la base del impuesto.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Traslado.TasaOCuota">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para señalar el valor de la tasa o cuota del impuesto que se traslada por los conceptos amparados en el comprobante.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.Traslado.Importe">
+ <summary>
+ Requerido.
+ <remarks>Atributo requerido para señalar la suma del importe del impuesto trasladado, agrupado por impuesto, TipoFactor y TasaOCuota. No se permiten valores negativos.</remarks>  
+ </summary>
+</member>
+<member name="P:XPN.Complemento.Nomina">
+ <summary>
+ Opcional.
+ </summary>
+ <remarks>Complemento para incorporar al Comprobante Fiscal Digital por Internet (CFDI) la información que ampara conceptos de ingresos por salarios, la prestación de un servicio personal subordinado o conceptos asimilados a salarios (Nómina).</remarks>
+</member>
+<member name="P:XPN.Complemento.CartaPorte20">
+ <summary>
+ Opcional.
+ </summary>
+ <remarks>Complemento para incorporar al Comprobante Fiscal Digital por Internet (CFDI), la información relacionada a los bienes y/o mercancías, ubicaciones de origen, puntos intermedios y destinos, así como lo referente al medio por el que se transportan; ya sea por vía terrestre (autotransporte y férrea), marítima y/o aérea; además de incluir el traslado de hidrocarburos y petrolíferos.</remarks>
+</member>
+<member name="P:XPN.Complemento.CartaPorte30">
+ <summary>
+ Opcional.
+ </summary>
+ <remarks>Complemento para incorporar al Comprobante Fiscal Digital por Internet (CFDI), la información relacionada a los bienes y/o mercancías, ubicaciones de origen, puntos intermedios y destinos, así como lo referente al medio por el que se transportan; ya sea por vía terrestre (autotransporte y férrea), marítima y/o aérea; además de incluir el traslado de hidrocarburos y petrolíferos.</remarks>
+</member>
+<member name="P:XPN.TimbreFiscalDigital.Version">
+<summary>
+<value>Requerido.</value> 
+<para>Atributo requerido para la expresión de la versión del estándar del Timbre Fiscal Digital.</para>
+</summary>
+</member>
+<member name="P:XPN.TimbreFiscalDigital.UUID">
+<summary>
+<value>Requerido.</value> 
+<para>Atributo requerido para expresar los 36 caracteres del folio fiscal (UUID) de la transacción de timbrado conforme al estándar RFC 4122.</para>
+</summary>
+</member>
+<member name="P:XPN.TimbreFiscalDigital.FechaTimbrado">
+<summary>
+<value>Requerido.</value> 
+<para>Atributo requerido para expresar la fecha y hora, de la generación del timbre por la certificación digital del SAT. Se expresa en la forma AAAA-MM-DDThh:mm:ss y debe corresponder con la hora de la Zona Centro del Sistema de Horario en México.</para>
+</summary>
+</member>
+<member name="P:XPN.TimbreFiscalDigital.RfcProvCertif">
+<summary>
+<value>Requerido.</value> 
+<para>Atributo requerido para expresar el RFC del proveedor de certificación de comprobantes fiscales digitales que genera el timbre fiscal digital.</para>
+</summary>
+</member>
+<member name="P:XPN.TimbreFiscalDigital.Leyenda">
+<summary>
+<value>Opcional.</value>
+<para>Atributo opcional para registrar información que el SAT comunique a los usuarios del CFDI.</para>
+</summary>
+</member>
+<member name="P:XPN.TimbreFiscalDigital.SelloCFD">
+<summary>
+<value>Requerido.</value> 
+<para>Atributo requerido para contener el sello digital del comprobante fiscal o del comprobante de retenciones, que se ha timbrado. El sello debe ser expresado como una cadena de texto en formato Base 64.</para>
+</summary>
+</member>
+<member name="P:XPN.TimbreFiscalDigital.NoCertificadoSAT">
+<summary>
+<value>Requerido.</value> 
+<para>Atributo requerido para expresar el número de serie del certificado del SAT usado para generar el sello digital del Timbre Fiscal Digital.</para>
+ </summary>
+</member>
+<member name="P:XPN.TimbreFiscalDigital.SelloSAT">
+<summary>
+<value>Requerido.</value> 
+<para>Atributo requerido para contener el sello digital del Timbre Fiscal Digital, al que hacen referencia las reglas de la Resolución Miscelánea vigente. El sello debe ser expresado como una cadena de texto en formato Base 64.</para>
+ </summary>
+</member>
+<member name="P:XPN.P10Traslado.Impuesto">
+<summary>
+<value>Requerido</value> 
+<para>Señalar la clave del tipo de impuesto trasladado.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Traslado.TipoFactor">
+<summary>
+<value>Requerido</value> 
+<para> señalar la clave del tipo de factor que se aplica a la base del impuesto.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Traslado.TasaOCuota">
+<summary>
+<value>Requerido</value> 
+<para>Señalar el valor de la tasa o cuota del impuesto que se traslada.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Traslado.Importe">
+<summary>
+<value>Requerido</value> 
+<para>Señalar el importe del impuesto trasladado. No se permiten valores negativos.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Traslados.Traslado">
+<summary>
+<para>Nodo condicional para capturar los impuestos trasladados aplicables.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Retencion.Impuesto">
+<summary>
+<value>Requerido</value> 
+<para>señalar la clave del tipo de impuesto retenido.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Retencion.Importe">
+<summary>
+<value>Requerido</value> 
+<para>señalar el importe o monto del impuesto retenido. No se permiten valores negativos.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Retenciones.Retencion">
+<summary>
+<value>Requerido</value> 
+<para>Nodo requerido para registrar la información detallada de una retención de impuesto específico.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Impuestos.TotalImpuestosRetenidos">
+<summary>
+<value>Opcional</value>
+<para>Expresar el total de los impuestos retenidos que se desprenden del pago. No se permiten valores negativos.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Impuestos.TotalImpuestosTrasladados">
+<summary>
+<value>Opcional</value>
+<para>Expresar el total de los impuestos trasladados que se desprenden del pago. No se permiten valores negativos.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Impuestos.Retenciones">
+<summary>
+<value>Opcional</value>
+<para>Nodo condicional para capturar los impuestos retenidos aplicables.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Impuestos.Traslados">
+<summary>
+<value>Opcional</value>
+<para>Nodo condicional para capturar los impuestos trasladados aplicables.</para>
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.IdDocumento">
+<summary>
+<value>Requerido</value> 
+<para>expresar el identificador del documento relacionado con el pago. Este dato puede ser un Folio Fiscal de la Factura Electrónica o bien el número de operación de un documento digital.</para>
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.Serie">
+<summary>
+<value>Opcional</value>
+<para> precisar la serie del comprobante para control interno del contribuyente, acepta una cadena de caracteres.</para>
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.Folio">
+<summary>
+<value>Opcional</value>
+<para>precisar el folio del comprobante para control interno del contribuyente, acepta una cadena de caracteres.   </para>
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.MonedaDR">
+<summary>
+<value>Requerido</value>
+<para> identificar la clave de la moneda utilizada en los importes del documento relacionado, cuando se usa moneda nacional o el documento relacionado no especifica la moneda se registra MXN. Los importes registrados en los atributos “ImpSaldoAnt”, “ImpPagado” e “ImpSaldoInsoluto” de éste nodo, deben corresponder a esta moneda. Conforme con la especificación ISO 4217. </para>
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.TipoCambioDR">
+<summary>
+<value>Opcional</value>
+<para>expresar el tipo de cambio conforme con la moneda registrada en el documento relacionado. Es requerido cuando la moneda del documento relacionado es distinta de la moneda de pago. Se debe registrar el número de unidades de la moneda señalada en el documento relacionado que equivalen a una unidad de la moneda del pago. Por ejemplo: El documento relacionado se registra en USD El pago se realiza por 100 EUR. Este atributo se registra como 1.114700 USD/EUR. El importe pagado equivale a 100 EUR * 1.114700 USD/EUR = 111.47 USD.</para>
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.MetodoDePagoDR">
+<summary>
+<value>Requerido</value>
+<para>expresar la clave del método de pago que se registró en el documento relacionado.</para>   
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.NumParcialidad">
+<summary>
+<value>Opcional</value>
+<para>expresar el número de parcialidad que corresponde al pago. Es requerido cuando MetodoDePagoDR contiene: “PPD” Pago en parcialidades o diferido.</para>
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.ImpSaldoAnt">
+<summary>
+<value>Opcional</value>
+<para>expresar el monto del saldo insoluto de la parcialidad anterior. Es requerido cuando MetodoDePagoDR contiene: “PPD” Pago en parcialidades o diferido.En el caso de que sea la primer parcialidad este campo debe contener el importe total del documento relacionado.</para>  
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.ImpPagado">
+<summary>
+<value>Opcional</value>
+<para> expresar el importe pagado para el documento relacionado. Es obligatorio cuando exista más de un documento relacionado o cuando existe un documento relacionado y el TipoCambioDR tiene un valor.</para>  
+</summary>
+</member>
+<member name="P:XPN.P10DoctoRelacionado.ImpSaldoInsoluto">
+<summary>
+<value>Opcional</value>
+<para>Expresar la diferencia entre el importe del saldo anterior y el monto del pago. Es requerido cuando MetodoDePagoDR contiene: “PPD” Pago en parcialidades o diferido.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.FechaPago">
+<summary>
+<value>Requerido</value>
+<para>expresar la fecha y hora en la que el beneficiario recibe el pago. Se expresa en la forma aaaa-mm-ddThh:mm:ss, de acuerdo con la especificación ISO 8601.En caso de no contar con la hora se debe registrar 12:00:00.</para>
+</summary>
+</member>
+<member name="P:XPN.P10Pago.FormaDePagoP">
+<summary>
+<value>Requerido</value>
+<para>expresar la clave de la forma en que se realiza el pago.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.MonedaP">
+<summary>
+<value>Requerido</value>
+<para>Identificar la clave de la moneda utilizada para realizar el pago, cuando se usa moneda nacional se registra MXN. El atributo Pagos:Pago:Monto y los atributos TotalImpuestosRetenidos, TotalImpuestosTrasladados, Traslados:Traslado:Importe y Retenciones:Retencion:Importe del nodo Pago:Impuestos deben ser expresados en esta moneda. Conforme con la especificación ISO 4217.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.TipoCambioP">
+<summary>
+<value>Opcional</value> 
+<para>expresar el tipo de cambio de la moneda a la fecha en que se realizó el pago. El valor debe reflejar el número de pesos mexicanos que equivalen a una unidad de la divisa señalada en el atributo MonedaP. Es requerido cuando el atributo MonedaP es diferente a MXN.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.Monto">
+<summary>
+<value>Requerido</value>
+<para>expresar el importe del pago. </para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.NumOperacion">
+<summary>
+<value>Opcional</value>
+<para> expresar el número de cheque, número de autorización, número de referencia, clave de rastreo en caso de ser SPEI, línea de captura o algún número de referencia análogo que identifique la operación que ampara el pago efectuado.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.RfcEmisorCtaOrd">
+<summary>
+<value>Opcional</value>
+<para>Expresar la clave RFC de la entidad emisora de la cuenta origen, es decir, la operadora, el banco, la institución financiera, emisor de monedero electrónico, etc., en caso de ser extranjero colocar XEXX010101000, considerar las reglas de obligatoriedad publicadas en la página del SAT para éste atributo de acuerdo con el catálogo catCFDI:c_FormaPago.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.NomBancoOrdExt">
+<summary>
+<value>Opcional</value>
+<para>expresar el nombre del banco ordenante, es requerido en caso de ser extranjero. Considerar las reglas de obligatoriedad publicadas en la página del SAT para éste atributo de acuerdo con el catálogo catCFDI:c_FormaPago.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.CtaOrdenante">
+<summary>
+<value>Opcional</value>
+<para> incorporar el número de la cuenta con la que se realizó el pago. Considerar las reglas de obligatoriedad publicadas en la página del SAT para éste atributo de acuerdo con el catálogo catCFDI:c_FormaPago</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.RfcEmisorCtaBen">
+<summary>
+<value>Opcional</value>
+<para>Expresar la clave RFC de la entidad operadora de la cuenta destino, es decir, la operadora, el banco, la institución financiera, emisor de monedero electrónico, etc. Considerar las reglas de obligatoriedad publicadas en la página del SAT para éste atributo de acuerdo con el catálogo catCFDI:c_FormaPago.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.CtaBeneficiario">
+<summary>
+<value>Opcional</value>
+<para>incorporar el número de cuenta en donde se recibió el pago. Considerar las reglas de obligatoriedad publicadas en la página del SAT para éste atributo de acuerdo con el catálogo catCFDI:c_FormaPago.</para>   
+</summary>
+</member>
+<member name="P:XPN.P10Pago.TipoCadPago">
+<summary>
+<value>Opcional</value>
+<para> identificar la clave del tipo de cadena de pago que genera la entidad receptora del pago. Considerar las reglas de obligatoriedad publicadas en la página del SAT para éste atributo de acuerdo con el catálogo catCFDI:c_FormaPago.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.CertPago">
+<summary>
+<value>Opcional</value>
+<para>Incorporar el certificado que ampara al pago, como una cadena de texto en formato base 64. Es requerido en caso de que el atributo TipoCadPago contenga información.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.CadPago">
+<summary>
+<value>Opcional</value>
+<para>expresar la cadena original del comprobante de pago generado por la entidad emisora de la cuenta beneficiaria. Es requerido en caso de que el atributo TipoCadPago contenga información.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.SelloPago">
+<summary>
+<value>Opcional</value>
+<para>Integrar el sello digital que se asocie al pago. La entidad que emite el comprobante de pago, ingresa una cadena original y el sello digital en una sección de dicho comprobante, este sello digital es el que se debe registrar en este campo. Debe ser expresado como una cadena de texto en formato base 64. Es requerido en caso de que el atributo TipoCadPago contenga información.</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.DoctoRelacionado">
+<summary>
+<value>Requerido</value>
+<para>DoctoRelacionado (0, Ilimitado)  Impuestos (0, Ilimitado)</para> 
+</summary>
+</member>
+<member name="P:XPN.P10Pago.Impuestos">
+<summary>
+<value>Requerido</value>
+<para>Nodo condicional para expresar el resumen de los impuestos aplicables cuando este documento sea un anticipo.</para> 
+</summary>
+</member>
+<member name="P:XPN.Pagos10.Version">
+<summary>
+<value>Requerido</value>
+<para>Indica la versión del complemento para recepción de pagos.</para> 
+</summary>
+</member>
+<member name="P:XPN.Pagos10.Pago">
+<summary>
+<value>Requerido</value>
+<para>Indica la versión del complemento para recepción de pagos.</para> 
+</summary>
+</member>
+<member name="P:XPN.Nomina.Version">
+<summary>
+<value>Obligatorio.</value>
+<para> Atributo requerido para la expresión de la versión del complemento. Valor prefijado a 1.2. </para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.TipoNomina">
+<summary>
+<value>Obligatorio.</value>
+<para> Atributo requerido para indicar el tipo de nómina, puede ser O= Nómina ordinaria o E= Nómina extraordinaria. </para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.FechaPago">
+<summary>
+<value>Obligatorio.</value>
+<para> Atributo requerido para la expresión de la fecha efectiva de erogación del gasto. Se expresa en la forma aaaa-mm-dd.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.FechaInicialPago">
+<summary>
+<value>Obligatorio.</value>
+<para> Atributo requerido para la expresión de la fecha efectiva de erogación del gasto. Se expresa en la forma aaaa-mm-dd.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.FechaFinalPago">
+<summary>
+<value>Obligatorio.</value>
+<para> Atributo requerido para la expresión de la fecha final del período de pago. Se expresa en la forma aaaa-mm-dd.</para>
+ </summary>
+</member>
+<member name="P:XPN.Nomina.NumDiasPagados">
+<summary>
+<value>Obligatorio.</value>
+<para> Atributo requerido para la expresión del número o la fracción de días pagados. Posiciones decimales 3</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.TotalPercepciones">
+<summary>
+<value>Opcional.</value>
+<para> Atributo condicional para representar la suma de las percepciones.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.TotalDeducciones">
+<summary>
+<value>Opcional.</value>
+<para> Atributo condicional para representar la suma de las deducciones aplicables.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.TotalOtrosPagos">
+<summary>
+<value>Opcional.</value>
+<para> Atributo condicional para representar la suma de otros pagos.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.Emisor">
+<summary>
+<value>Opcional.</value>
+<para> Nodo condicional para expresar la información del contribuyente emisor del comprobante de nómina.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.Receptor">
+<summary>
+<value>Requerido.</value>
+<para>Nodo requerido para precisar la información del contribuyente receptor del comprobante de nómina.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.Percepciones">
+<summary>
+<value>Opcional.</value>
+<para>Nodo condicional para expresar las percepciones aplicables.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.Deducciones">
+<summary>
+<value>Opcional.</value>
+<para>Nodo condicional para expresar las deducciones aplicables.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.OtrosPagos">
+<summary>
+<value>Opcional.</value>
+<para>Nodo condicional para expresar otros pagos aplicables.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.Incapacidades">
+<summary>
+<value>Opcional.</value>
+<para>Nodo condicional para expresar información de las incapacidades.</para>
+</summary>
+</member>
+<member name="P:XPN.Nomina.HorasExtra">
+<sumary>
+ <value>Opcional</value>
+ <para> Nodo condicional para expresar las horas extra aplicables. </para>
+ </sumary>
+</member>
+<member name="P:XPN.NEmisor.Curp">
+<summary>
+<value>Opcional.</value>
+<para>Atributo condicional para expresar la CURP del emisor del comprobante de nómina cuando es una persona física.</para>
+</summary>
+</member>
+<member name="P:XPN.NEmisor.RegistroPatronal">
+<summary>
+<value>Opcional.</value>
+<para>Atributo condicional para expresar el registro patronal, clave de ramo - pagaduría o la que le asigne la institución de seguridad social al patrón, a 20 posiciones máximo. Se debe ingresar cuando se cuente con él, o se esté obligado conforme a otras disposiciones distintas a las fiscales.</para>
+</summary>
+</member>
+<member name="P:XPN.NEmisor.RfcPatronOrigen">
+<summary>
+<value>Opcional.</value>
+<para> Atributo opcional para expresar el RFC de la persona que fungió como patrón cuando el pago al trabajador se realice a través de un tercero como vehículo o herramienta de pago.</para>
+</summary>
+</member>
+<member name="P:XPN.NEmisor.EntidadSNCF">
+<summary>
+<value>Opcional.</value>
+<para>Nodo condicional para que las entidades adheridas al Sistema Nacional de Coordinación Fiscal realicen la identificación del origen de los recursos utilizados en el pago de nómina del personal que presta o desempeña un servicio personal subordinado en las dependencias de la entidad federativa, del municipio o demarcación territorial de la Ciudad de México, así como en sus respectivos organismos autónomos y entidades paraestatales y paramunicipales.</para>
+</summary>
+</member>
+<member name="P:XPN.NEntidadSNCF.OrigenRecurso">
+<summary>
+<value>Requerido.</value>
+<para>Atributo requerido para identificar el origen del recurso utilizado para el pago de nómina del personal que presta o desempeña un servicio personal subordinado o asimilado a salarios en las dependencias.</para>
+</summary>
+</member>
+<member name="P:XPN.NEntidadSNCF.MontoRecursoPropio">
+<summary>
+<value>Opcional.</value>
+<para>Atributo condicional para expresar el monto del recurso pagado con cargo a sus participaciones u otros ingresos locales (importe bruto de los ingresos propios, es decir total de gravados y exentos), cuando el origen es mixto.</para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.Curp">
+<summary>
+<value>Requerido.</value> 
+<para>Atributo requerido para expresar la CURP del receptor del comprobante de nómina. </para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.NumSeguridadSocial">
+<summary>
+<value>Opcional</value>
+<para>Atributo condicional para expresar el número de seguridad social del trabajador. Se debe ingresar cuando se cuente con él, o se esté obligado conforme a otras disposiciones distintas a las fiscales.</para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.FechaInicioRelLaboral">
+<summary>
+<value>Opcional</value>
+<para>Atributo condicional para expresar la fecha de inicio de la relación laboral entre el empleador y el empleado. Se expresa en la forma aaaa-mm-dd, de acuerdo con la especificación ISO 8601. Se debe ingresar cuando se cuente con él, o se esté obligado conforme a otras disposiciones distintas a las fiscales.   </para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.Antiguedad">
+<summary>
+<value>Opcional</value>
+<para>Atributo condicional para expresar la fecha de inicio de la relación laboral entre el empleador y el empleado. Se expresa en la forma aaaa-mm-dd, de acuerdo con la especificación ISO 8601. Se debe ingresar cuando se cuente con él, o se esté obligado conforme a otras disposiciones distintas a las fiscales. </para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.TipoContrato">
+<summary>
+<value>Requerido</value>
+<para>Atributo requerido para expresar el tipo de contrato que tiene el trabajador. </para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.Sindicalizado">
+<summary>
+<value>Opcional</value>
+<para>Atributo opcional para indicar si el trabajador está asociado a un sindicato. Si se omite se asume que no está asociado a algún sindicato </para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.TipoJornada">
+<summary>
+<value>Opcional</value>
+<para>Atributo condicional para expresar el tipo de jornada que cubre el trabajador. Se debe ingresar cuando se esté obligado conforme a otras disposiciones distintas a las fiscales.</para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.TipoRegimen">
+<summary>
+<value>Requerido</value>
+<para>Atributo requerido para la expresión de la clave del régimen por el cual se tiene contratado al trabajador</para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.NumEmpleado">
+<summary>
+<value>Requerido</value>
+<para>Atributo requerido para expresar el número de empleado de 1 a 15 posiciones. </para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.Departamento">
+<summary>
+<value>Opcional</value>
+<para>Atributo opcional para la expresión del departamento o área a la que pertenece el trabajador </para>  
+</summary>
+</member>
+<member name="P:XPN.NReceptor.Puesto">
+<summary>
+<value>Opcional</value>
+<para>Atributo opcional para la expresión del puesto asignado al empleado o actividad que realiza.</para>  
+</summary>
+</member>
+<member name="P:XPN.NReceptor.RiesgoPuesto">
+<summary>
+<value>Opcional</value>
+<para>Atributo opcional para expresar la clave conforme a la Clase en que deben inscribirse los patrones, de acuerdo con las actividades que desempeñan sus trabajadores, según lo previsto en el artículo 196 del Reglamento en Materia de Afiliación Clasificación de Empresas, Recaudación y Fiscalización, o conforme con la normatividad del Instituto de Seguridad Social del trabajador. Se debe ingresar cuando se cuente con él, o se esté obligado conforme a otras disposiciones distintas a las fiscales</para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.PeriodicidadPago">
+<summary>
+<value>Requerido</value>
+<para>Atributo requerido para la forma en que se establece el pago del salario.</para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.Banco">
+<summary>
+<value>Opcional</value>
+<para>Atributo condicional para la expresión de la clave del Banco conforme al catálogo, donde se realiza el depósito de nómina.</para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.CuentaBancaria">
+<summary>
+<value>Opcional</value>
+<para>Atributo condicional para la expresión de la cuenta bancaria a 11 posiciones o número de teléfono celular a 10 posiciones o número de tarjeta de crédito, débito o servicios a 15 ó 16 posiciones o la CLABE a 18 posiciones o número de monedero electrónico, donde se realiza el depósito de nómina.   </para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.SalarioBaseCotApor">
+<summary>
+<value>Opcional</value>
+<para>Atributo opcional para expresar la retribución otorgada al trabajador, que se integra por los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, alimentación, habitación, primas, comisiones, prestaciones en especie y cualquiera otra cantidad o prestación que se entregue al trabajador por su trabajo, sin considerar los conceptos que se excluyen de conformidad con el Artículo 27 de la Ley del Seguro Social, o la integración de los pagos conforme la normatividad del Instituto de Seguridad Social del trabajador. (Se emplea para pagar las cuotas y aportaciones de Seguridad Social). Se debe ingresar cuando se esté obligado conforme a otras disposiciones distintas a las fiscales.</para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.SalarioDiarioIntegrado">
+<summary>
+<value>Opcional</value>
+<para>Atributo opcional para expresar el salario que se integra con los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie y cualquier otra cantidad o prestación que se entregue al trabajador por su trabajo, de conformidad con el Art. 84 de la Ley Federal del Trabajo. (Se utiliza para el cálculo de las indemnizaciones). Se debe ingresar cuando se esté obligado conforme a otras disposiciones distintas a las fiscales. </para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.ClaveEntFed">
+<summary>
+<value>Requerido</value>
+<para>Atributo requerido para expresar la clave de la entidad federativa en donde el receptor del recibo prestó el servicio.</para>
+</summary>
+</member>
+<member name="P:XPN.NReceptor.SubContratacion">
+<summary>
+<value>Opcional</value>
+<para>Nodo condicional para expresar la lista de las personas que los subcontrataron</para>
+</summary>
+</member>
+<member name="P:XPN.NSubContratacion.RfcLabora">
+<summary>
+<value>Requerido</value>
+<para>el RFC de la persona que subcontrata</para>
+</summary>
+</member>
+<member name="P:XPN.NSubContratacion.PorcentajeTiempo">
+<summary>
+<value>Requerido</value>
+<para>Expresar el porcentaje del tiempo que prestó sus servicios con el RFC que lo subcontrata</para>
+</summary>
+</member>
+<member name="P:XPN.NPercepciones.TotalSueldos">
+<summary>
+<value>Opcional</value>
+<para>Expresar el total de percepciones brutas (gravadas y exentas) por sueldos y salarios y conceptos asimilados a salarios</para>
+</summary>
+</member>
+<member name="P:XPN.NPercepciones.TotalSeparacionIndemnizacion">
+<summary>
+<value>Opcional</value>
+<para>expresar el importe exento y gravado de las claves tipo percepción 022 Prima por Antigüedad, 023 Pagos por separación y 025 Indemnizaciones.</para>
+</summary>
+</member>
+<member name="P:XPN.NPercepciones.TotalJubilacionPensionRetiro">
+<summary>
+<value>Opcional</value>
+<para> expresar el importe exento y gravado de las claves tipo percepción 039 Jubilaciones, pensiones o haberes de retiro en una exhibición y 044 Jubilaciones, pensiones o haberes de retiro en parcialidades.</para>
+</summary>
+</member>
+<member name="P:XPN.NPercepciones.TotalGravado">
+<summary>
+<value>Requerido</value>
+<para>Expresar el total de percepciones gravadas que se relacionan en el comprobante.</para>
+</summary> 
+</member>
+<member name="P:XPN.NPercepciones.TotalExento">
+<summary>
+<value>Requerido</value>
+<para>expresar el total de percepciones exentas que se relacionan en el comprobante</para>
+</summary>
+</member>
+<member name="P:XPN.NPercepciones.Percepcion">
+<summary>
+<para>Nodo condicional para expresar la informacion detallada de pagos por jubilacion, pensiones o haberes de retiro</para>
+</summary>
+</member>
+<member name="P:XPN.NPercepciones.JubilacionPensionRetiro">
+<summary>
+JubilacionPensionRetiro(minimo, maximo)
+JubilacionPensionRetiro(0,1)
+</summary>
+</member>
+<member name="P:XPN.NPercepciones.SeparacionIndeminzacion">
+<summary>
+SeparacionIndeminzacion(minimo, maximo)
+SeparacionIndeminzacion(0, 1)
+</summary>
+</member>
+<member name="P:XPN.NPercepcion.TipoPercepcion">
+<summary>
+<value>Requerido</value>
+<para>Expresar la Clave agrupadora bajo la cual se clasifica la percepción. </para>
+</summary>
+</member>
+<member name="P:XPN.NPercepcion.Clave">
+<summary>
+<value>Requerido</value>
+<para> expresar la clave de percepción de nómina propia de la contabilidad de cada patrón, puede conformarse desde 3 hasta 15 caracteres. </para> 
+</summary>
+</member>
+<member name="P:XPN.NPercepcion.Concepto">
+<summary>
+<value>Requerido</value>
+<para>Requerido para la descripción del concepto de percepción </para>
+</summary>
+</member>
+<member name="P:XPN.NPercepcion.ImporteGravado">
+<summary>
+<value>Requerido</value>
+<para>Representa el importe gravado de un concepto de percepción.</para>
+</summary>
+</member>
+<member name="P:XPN.NPercepcion.ImporteExento">
+<summary>
+<value>Requerido</value>
+<para> representa el importe exento de un concepto de percepción.</para>
+</summary>
+</member>
+<member name="P:XPN.NPercepcion.AccionesOTitulos">
+<summary>
+<value>Opcional</value>
+<para>Nodo condicional para expresar ingresos por acciones o títulos valor que representan bienes. Se vuelve requerido cuando existan ingresos por sueldos derivados de adquisición de acciones o títulos (Art. 94, fracción VII LISR). </para>
+</summary>
+</member>
+<member name="P:XPN.NPercepcion.HorasExtras">
+<summary>
+<value>Opcional</value>
+<para>Nodo condicional para expresar las horas extra aplicables. </para>
+</summary>
+</member>
+<member name="P:XPN.NAccionesOTitulos.ValorMercado">
+<summary>
+<value>Requerido</value>
+<para>Expresar el valor de mercado de las Acciones o Títulos valor al ejercer la opción. </para>
+</summary>
+</member>
+<member name="P:XPN.NAccionesOTitulos.PrecioAlOtorgarse">
+<summary>
+<value>Requerido</value>
+<para> expresar el precio establecido al otorgarse la opción de ingresos en acciones o títulos valor. </para>
+</summary>
+</member>
+<member name="P:XPN.NHorasExtra.Dias">
+<summary>
+<value>Requerido</value>
+<para>expresar el número de días en que el trabajador realizó horas extra en el periodo.</para>
+</summary>
+</member>
+<member name="P:XPN.NHorasExtra.TipoHoras">
+<summary>
+<value>Requerido</value>
+<para>expresar el tipo de pago de las horas extra.</para>
+</summary>
+</member>
+<member name="P:XPN.NHorasExtra.HorasExtra">
+<summary>
+<value>Requerido</value>
+<para> expresar el número de horas extra trabajadas en el periodo.</para>
+</summary>
+</member>
+<member name="P:XPN.NHorasExtra.ImportePagado">
+<summary>
+<value>Requerido</value>
+<para> expresar el importe pagado por las horas extra</para>
+</summary>
+</member>
+<member name="P:XPN.NJubilacionPensionRetiro.TotalParcialidad">
+<summary>
+<value>Opcional</value>
+<para> expresar los ingresos totales por pago cuando se hace en parcialidades.</para>
+</summary>
+</member>
+<member name="P:XPN.NJubilacionPensionRetiro.MontoDiario">
+<summary>
+<value>Opcional</value>
+<para> expresar el monto diario percibido por jubilación, pensiones o haberes de retiro cuando se realiza en parcialidades.</para>
+</summary>
+</member>
+<member name="P:XPN.NJubilacionPensionRetiro.IngresoAcumulable">
+<summary>  
+<value>Requerido</value>
+<para>expresar los ingresos acumulables. </para>
+</summary>
+</member>
+<member name="P:XPN.NJubilacionPensionRetiro.IngresoNoAcumulable">
+<summary>
+<value>Requerido</value>
+<para> expresar los ingresos no acumulables.</para>
+</summary>
+</member>
+<member name="P:XPN.NSeparacionIndemnizacion.TotalPagado">
+<summary>
+<value>Requerido</value>
+<para>indica el monto total del pago.</para>
+</summary>
+</member>
+<member name="P:XPN.NSeparacionIndemnizacion.NumAnosServicio">
+<summary>
+<value>Requerido</value>
+<para> expresar el número de años de servicio del trabajador. Se redondea al entero superior si la cifra contiene años y meses y hay más de 6 meses.</para>
+</summary>
+</member>
+<member name="P:XPN.NSeparacionIndemnizacion.UltimoSueldoMensOrd">
+<summary>
+<value>Requerido</value>
+<para>e indica el último sueldo mensual ordinario.</para>
+</summary>
+</member>
+<member name="P:XPN.NSeparacionIndemnizacion.IngresoAcumulable">
+<summary>
+<value>Requerido</value>
+<para>expresar los ingresos acumulables.</para>
+</summary>
+</member>
+<member name="P:XPN.NSeparacionIndemnizacion.IngresoNoAcumulable">
+<summary>
+<value>Requerido</value>
+<para>indica los ingresos no acumulables.</para>
+</summary>
+</member>
+<member name="P:XPN.NDeducciones.TotalOtrasDeducciones">
+<summary>
+<value>Opcional</value>
+<para>expresar el total de deducciones que se relacionan en el comprobante, donde la clave de tipo de deducción sea distinta a la 002 correspondiente a ISR. </para>
+</summary>
+</member>
+<member name="P:XPN.NDeducciones.TotalImpuestosRetenidos">
+<summary>
+<value>Opcional</value>
+<para>expresar el total de los impuestos federales retenidos, es decir, donde la clave de tipo de deducción sea 002 correspondiente a ISR.</para>
+</summary>
+</member>
+<member name="P:XPN.NDeducciones.Deduccion">
+<summary>
+<value>Requerido</value>
+<para>Nodo requerido para expresar la información detallada de una deducción. </para>
+</summary>
+</member>
+<member name="P:XPN.NDeduccion.TipoDeduccion">
+<summary>
+<value>Requerido</value>
+<para>registrar la clave agrupadora que clasifica la deducción.   </para>
+</summary>
+</member>
+<member name="P:XPN.NDeduccion.Clave">
+<summary>
+<value>Requerido</value>
+<para> la clave de deducción de nómina propia de la contabilidad de cada patrón, puede conformarse desde 3 hasta 15 caracteres.</para>
+</summary>
+</member>
+<member name="P:XPN.NDeduccion.Concepto">
+<summary>
+<value>Requerido</value>
+<para>la descripción del concepto de deducción.</para>
+</summary>
+</member>
+<member name="P:XPN.NDeduccion.Importe">
+<summary>
+<value>Requerido</value> 
+<para>registrar el importe del concepto de deducción.   </para>
+</summary>
+</member>
+<member name="P:XPN.NOtrosPagos.OtroPago">
+<summary>
+<para>Nodo condicional para expresar otros pagos aplicables.</para>
+</summary>
+</member>
+<member name="P:XPN.NOtroPago.TipoOtroPago">
+<summary>
+<value>Requerido</value>
+<para>Expresar la clave agrupadora bajo la cual se clasifica el otro pago</para>
+</summary>
+</member>
+<member name="P:XPN.NOtroPago.Clave">
+<summary>
+<value>Requerido</value>
+<para>Representa la clave de otro pago de nómina propia de la contabilidad de cada patrón, puede conformarse desde 3 hasta 15 caracteres.</para>
+</summary>
+</member>
+<member name="P:XPN.NOtroPago.Concepto">
+<summary>
+<value>Requerido</value>
+<para>la descripción del concepto de otro pago.</para>
+</summary>
+</member>
+<member name="P:XPN.NOtroPago.Importe">
+<summary>
+<value>Requerido</value>
+<para>Expresar el importe del concepto de otro pago.</para>
+</summary>
+</member>
+<member name="P:XPN.NOtroPago.SubsidioAlEmpleo">
+<summary>
+<para>Nodo requerido para expresar la información referente al subsidio al empleo del trabajador.</para>
+</summary>
+</member>
+<member name="P:XPN.NOtroPago.CompensacionSaldosAFavor">
+<summary>
+<para>Nodo condicional para expresar la información referente a la compensación de saldos a favor de un trabajador</para>
+</summary>
+</member>
+<member name="P:XPN.NSubsidioAlEmpleo.SubsidioCausado">
+<summary>
+<value>Requerido</value>
+<para>Expresar el subsidio causado conforme a la tabla del subsidio para el empleo publicada en el Anexo 8 de la RMF vigente</para>
+</summary>
+</member>
+<member name="P:XPN.NCompensacionSaldosAFavor.SaldoAFavor">
+<summary>
+<value>Requerido</value>
+<para>expresar el saldo a favor determinado por el patrón al trabajador en periodos o ejercicios anteriores.</para>
+</summary>
+</member>
+<member name="P:XPN.NCompensacionSaldosAFavor.Ano">
+<summary>
+<value>Requerido</value>
+<para> expresar el año en que se determinó el saldo a favor del trabajador por el patrón que se incluye en el campo “RemanenteSalFav”.</para>
+</summary>
+</member>
+<member name="P:XPN.NCompensacionSaldosAFavor.RemanenteSalFav">
+<summary>
+<value>Requerido</value>
+<para>expresar el remanente del saldo a favor del trabajador.</para>
+</summary>
+</member>
+<member name="P:XPN.NIncapacidades.Incapacidad">
+<summary>  
+<para>Nodo condicional para expresar información de las incapacidades.</para>
+</summary>
+</member>
+<member name="P:XPN.NIncapacidad.DiasIncapacidad">
+<summary>
+<value>Requerido</value>
+<para>expresar el número de días enteros que el trabajador se incapacitó en el periodo. </para>
+</summary>
+</member>
+<member name="P:XPN.NIncapacidad.TipoIncapacidad">
+<summary>
+<value>Requerido</value> 
+<para>Expresar la razón de la incapacidad.</para>
+</summary>
+</member>
+<member name="P:XPN.NIncapacidad.ImporteMonetario">
+<summary>
+<value>Opcional.</value>
+<para>expresar el monto del importe monetario de la incapacidad.</para>
+</summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.Version">
+ <summary>
+ Atributo requerido con valor prefijado que indica la versión del estándar bajo el que se encuentra expresada la retención y/o comprobante de información de pagos. Valor por defecto 1.0
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.FolioInt">
+ <summary>
+ Atributo opcional para control interno del contribuyente que expresa el folio del documento que ampara la retención e información de pagos. Permite números y/o letras.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.Sello">
+ <summary>
+ Atributo requerido para contener el sello digital del documento de retención e información de pagos. El sello deberá ser expresado como una cadena de texto en formato base 64.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.NumCert">
+ <summary>
+ Atributo requerido para expresar el número de serie del certificado de sello digital con el que se selló digitalmente el documento de la retención e información de pagos.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.Cert">
+ <summary>
+ Atributo requerido que sirve para incorporar el certificado de sello digital que ampara el documento de retención e información de pagos como texto, en formato base 64.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.FechaExp">
+ <summary>
+ Atributo requerido para la expresión de la fecha y hora de expedición del documento de retención e información de pagos. Se expresa en la forma yyyy-mm-ddThh:mm:ssTZD-6, de acuerdo con la especificación ISO 8601.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.CveRetenc">
+ <summary>
+ Atributo requerido para expresar la clave de la retención e información de pagos de acuerdo al catálogo publicado en internet por el SAT.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.DescRetenc">
+ <summary>
+ Atributo opcional que expresa la descripción de la retención e información de pagos en caso de que en el atributo CveRetenc se haya elegido el valor para 'otro tipo de retenciones'
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.Emisor">
+ <summary>
+ Nodo requerido para expresar la información del contribuyente emisor del documento electrónico de retenciones e información de pagos.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.Receptor">
+ <summary>
+ Nodo requerido para expresar la información del contribuyente receptor del documento electrónico de retenciones e información de pagos.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.Periodo">
+ <summary>
+ Nodo requerido para expresar el periodo que ampara el documento de retenciones e información de pagos
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.Totales">
+ <summary>
+ Nodo requerido para expresar el total de las retenciones e información de pagos efectuados en el período que ampara el documento.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Retenciones.Complemento">
+ <summary>
+ Nodo opcional donde se incluirá el complemento Timbre Fiscal Digital de manera obligatoria y los nodos complementarios determinados por el SAT, de acuerdo a las disposiciones particulares a un sector o actividad específica.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Emisor.RFCEmisor">
+ <summary>
+ Atributo requerido para incorporar la clave en el Registro Federal de Contribuyentes correspondiente al contribuyente emisor del documento de retención e información de pagos, sin guiones o espacios.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Emisor.NomDenRazSocE">
+ <summary>
+ Atributo opcional para el nombre, denominación o razón social del contribuyente emisor del documento de retención e información de pagos.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Emisor.CURPE">
+ <summary>
+ Atributo opcional para la Clave Única del Registro Poblacional del contribuyente emisor del documento de retención e información de pagos.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Receptor.Nacional">
+ <summary>
+ Nodo requerido para expresar la información del contribuyente receptor en caso de que sea de nacionalidad mexicana
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Receptor.Extranjero">
+ <summary>
+ Nodo requerido para expresar la información del contribuyente receptor del documento cuando sea residente en el extranjero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Receptor.Nacionalidad">
+ <summary>
+ Atributo requerido para expresar la nacionalidad del receptor del documento.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Nacional.RFCRecep">
+ <summary>
+ Atributo requerido para la clave del Registro Federal de Contribuyentes correspondiente al contribuyente receptor del documento.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Nacional.NomDenRazSocR">
+ <summary>
+ Atributo opcional para el nombre, denominación o razón social del contribuyente receptor del documento.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Nacional.CURPR">
+ <summary>
+ Atributo opcional para la Clave Única del Registro Poblacional del contribuyente receptor del documento.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Extranjero.NumRegIdTrib">
+ <summary>
+ Atributo opcional para expresar el número de registro de identificación fiscal del receptor del documento cuando sea residente en el extranjero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Extranjero.NomDenRazSocR">
+ <summary>
+ Atributo opcional para el nombre, denominación o razón social del contribuyente receptor del documento.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Periodo.MesIni">
+ <summary>
+ Atributo requerido para la expresión del mes inicial del periodo de la retención e información de pagos
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Periodo.MesFin">
+ <summary>
+ Atributo requerido para la expresión del mes final del periodo de la retención e información de pagos
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Periodo.Ejerc">
+ <summary>
+ Atributo requerido para la expresión del ejercicio fiscal (año)
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Totales.ImpRetenidos">
+ <summary>
+ Nodo opcional para expresar el total de los impuestos retenidos que se desprenden de los conceptos expresados en el documento de retenciones e información de pagos.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Totales.montoTotOperacion">
+ <summary>
+ >Atributo requerido para expresar  el total del monto de la operación  que se relaciona en el comprobante
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Totales.montoTotGrav">
+ <summary>
+ Atributo requerido para expresar el total del monto gravado de la operación  que se relaciona en el comprobante.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Totales.montoTotExent">
+ <summary>
+ Atributo requerido para expresar el total del monto exento de la operación  que se relaciona en el comprobante.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Totales.montoTotRet">
+ <summary>
+ Atributo requerido para expresar el monto total de las retenciones. Sumatoria de los montos de retención del nodo ImpRetenidos.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.ImpRetenidos.BaseRet">
+ <summary>
+ Requerido. 
+ <remarks>Atributo opcional para expresar la  base del impuesto, que puede ser la diferencia entre los ingresos percibidos y las deducciones autorizadas</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.ImpRetenidos.Impuesto">
+ <summary>
+ Requerido.
+ <remarks>Atributo opcional para señalar el tipo de impuesto retenido del periodo o ejercicio conforme al catálogo.</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.ImpRetenidos.MontoRet">
+ <summary>
+ Opcional
+ <remarks>Atributo requerido para expresar el importe del impuesto retenido en el periodo o ejercicio</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.ImpRetenidos.TipoPagoRet">
+ <summary>
+ Requerido. 
+ <remarks>Atributo requerido para precisar si el monto de la retención es considerado pago definitivo o pago provisional</remarks>
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Complemento.Dividendos">
+ <summary>
+ Complemento para  expresar  el total de  ganancias  y utilidades generadas por rendimientos en base a inversiones en instrumentos de inversión
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Complemento.Intereses">
+ <summary>
+ Complemento para expresar los intereses obtenidos por rendimiento en inversiones
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Complemento.Pagosaextranjeros">
+ <summary>
+ Complemento para expresar los pagos que se realizan a residentes en el extranjero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Complemento.Arrendamientoenfideicomiso">
+ <summary>
+ Complemento para expresar el arrendamiento de bienes de un periodo o ejercicio determinado (incluye FIBRAS).
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Complemento.EnajenaciondeAcciones">
+ <summary>
+ Complemento para expresar la enajenación de acciones u operaciones de valores (incluye ganancia o pérdida).
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Complemento.Operacionesconderivados">
+ <summary>
+ Complemento para incorporar información de las Operaciones Financieras Derivadas de Capital.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Dividendos.Version">
+ <summary>
+ Atributo requerido con valor prefijado que indica la versión del complemento de dividendos y/o dividendos distribuidos. Valor por defecto 1.0
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Dividendos.DividOUtil">
+ <summary>
+ Nodo opcional que expresa los dividendos o utilidades distribuidas del periodo o ejercicio
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Dividendos.Remanente">
+ <summary>
+ Nodo opcional que expresa el resultado obtenido de la diferencia entre ingresos y egresos de las personas morales que distribuyan anticipos o rendimientos o sociedades de producción, sociedades y asociaciones civiles.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.DividOUtil.CveTipDivOUtil">
+ <summary>
+ Atributo requerido para expresar la clave del tipo de dividendo o utilidad distribuida de acuerdo al catálogo.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.DividOUtil.MontISRAcredRetMexico">
+ <summary>
+ Atributo requerido para expresar el importe o retención  del dividendo o  utilidad en territorio nacional
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.DividOUtil.MontISRAcredRetExtranjero">
+ <summary>
+ Atributo requerido para expresar el importe o retención  del dividendo o  utilidad en territorio extranjero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.DividOUtil.MontRetExtDivExt">
+ <summary>
+ Atributo opcional para expresar el monto de la retención en el extranjero sobre dividendos del extranjero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.DividOUtil.TipoSocDistrDiv">
+ <summary>
+ Atributo requerido  para expresar si el dividendo es distribuido por sociedades nacionales o extranjeras.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.DividOUtil.MontISRAcredNal">
+ <summary>
+ Atributo opcional para expresar el monto del ISR acreditable nacional
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.DividOUtil.MontDivAcumNal">
+ <summary>
+ Atributo opcional para expresar el monto del dividendo acumulable nacional
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.DividOUtil.MontDivAcumExt">
+ <summary>
+ Atributo opcional para expresar el monto del dividendo acumulable extranjero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Remanente.ProporcionRem">
+ <summary>
+ Atributo opcional que expresa el porcentaje de participación de sus integrantes o accionistas
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Intereses.Version">
+ <summary>
+ Atributo requerido con valor prefijado que indica la versión del complemento de intereses obtenidos en el periodo o ejercicio
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Intereses.SistFinanciero">
+ <summary>
+ Atributo requerido para expresar si los interés obtenidos en el periodo o ejercicio provienen del sistema financiero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Intereses.RetiroAORESRetInt">
+ <summary>
+ Atributo requerido para expresar si los intereses obtenidos fueron retirados en el periodo o ejercicio
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Intereses.OperFinancDerivad">
+ <summary>
+ Atributo requerido para expresar si los intereses obtenidos corresponden a operaciones financieras derivadas.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Intereses.MontIntNominal">
+ <summary>
+ Atributo requerido para expresar el importe del interés Nóminal obtenido en un periodo o ejercicio
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Intereses.MontIntReal">
+ <summary>
+ Atributo requerido para expresar el monto de los intereses reales (diferencia que se obtiene restando al tipo de interés nominal y la tasa de inflación del periodo o ejercicio )
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Intereses.Perdida">
+ <summary>
+ Atributo requerido para expresar la pérdida por los intereses obtenidos en el periodo o ejercicio
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Pagosaextranjeros.NoBeneficiario">
+ <summary>
+ odo opcional para expresar la información del residente extranjero efectivo del cobro
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Pagosaextranjeros.Beneficiario">
+ <summary>
+ Nodo opcional para precisar la información del representante para efectos fiscales en México
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Pagosaextranjeros.Version">
+ <summary>
+ Atributo requerido con valor prefijado que indica la versión del complemento de pagos realizados a residentes a residentes en el extranjero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Pagosaextranjeros.EsBenefEfectDelCobro">
+ <summary>
+ Atributo requerido para expresar si el beneficiario del pago es la misma persona que retiene
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.NoBeneficiario.PaisDeResidParaEfecFisc">
+ <summary>
+ Atributo requerido para expresar la clave del país de residencia del extranjero, conforme al catálogo de países publicado en el Anexo 10 de la RMF.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.NoBeneficiario.ConceptoPago">
+ <summary>
+ Atributo requerido para expresar  el tipo contribuyente sujeto a la retención, conforme al catálogo.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.NoBeneficiario.DescripcionConcepto">
+ <summary>
+ Atributo requerido para expresar la descripción de la definición del pago del residente en el extranjero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Beneficiario.RFC">
+ <summary>
+ Atributo requerido para expresar la clave del registro federal de contribuyentes del representante legal en México
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Beneficiario.CURP">
+ <summary>
+ Atributo requerido para la expresión de la CURP del representante legal
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Beneficiario.NomDenRazSocB">
+ <summary>
+ Atributo requerido para expresar el nombre, denominación o razón social del contribuyente en México
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Beneficiario.ConceptoPago">
+ <summary>
+ Atributo requerido para expresar el tipo de contribuyente sujeto a la retención, conforme al catálogo.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Beneficiario.DescripcionConcepto">
+ <summary>
+ Atributo requerido para expresar la descripción de la definición del pago del residente en el extranjero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Arrendamientoenfideicomiso.Version">
+ <summary>
+ Atributo requerido con valor prefijado que indica la versión del complemento de arrendamiento financiero
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Arrendamientoenfideicomiso.PagProvEfecPorFiduc">
+ <summary>
+ Atributo requerido para expresar el importe del pago efectuado por parte del fiduciario al arrendador de bienes en el periodo
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Arrendamientoenfideicomiso.RendimFideicom">
+ <summary>
+ Atributo requerido para expresar el importe de los rendimientos obtenidos en el periodo por el arrendamiento de bienes
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Arrendamientoenfideicomiso.DeduccCorresp">
+ <summary>
+ Atributo requerido para expresar el importe de las deducciones correspondientes al arrendamiento de los bienes durante el periodo
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Arrendamientoenfideicomiso.MontTotRet">
+ <summary>
+ Atributo opcional para expresar el monto total de la retención del arrendamiento de los bienes del periodo
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Arrendamientoenfideicomiso.MontResFiscDistFibras">
+ <summary>
+ Atributo opcional para expresar el monto del resultado fiscal distribuido por FIBRAS
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Arrendamientoenfideicomiso.MontOtrosConceptDistr">
+ <summary>
+ Atributo opcional para expresar el monto de otros conceptos distribuidos
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Arrendamientoenfideicomiso.DescrMontOtrosConceptDistr">
+ <summary>
+ Atributo opcional para describir los conceptos distribuidos cuando se señalen otros conceptos.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.EnajenaciondeAcciones.Version">
+ <summary>
+ Atributo requerido con valor prefijado que indica la versión del complemento de la enajenación de acciones u operaciones de valores
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.EnajenaciondeAcciones.ContratoIntermediacion">
+ <summary>
+ Atributo requerido para expresar la descripción del contrato de intermediación
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.EnajenaciondeAcciones.Ganancia">
+ <summary>
+ Atributo requerido para expresar la ganancia obtenida por la enajenación de acciones u operación de valores
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.EnajenaciondeAcciones.Perdida">
+ <summary>
+ Atributo requerido para expresar la pérdida en el contrato de intermediación
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Operacionesconderivados.Version">
+ <summary>
+ Atributo requerido con valor prefijado que indica la versión del complemento de las operaciones financieras derivadas de capital.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Operacionesconderivados.MontGanAcum">
+ <summary>
+ Atributo requerido para expresar el monto de la ganancia acumulable.
+ </summary>
+</member>
+<member name="P:XPN.ComplementoRetenciones.Operacionesconderivados.MontPerdDed">
+ <summary>
+ Atributo requerido para expresar el monto de la pérdida deducible.
+ </summary>
+</member>
+<member name="T:XPN.Numalet">
+ <summary>
+ Convierte números en su expresión numérica a su numeral cardinal
+ </summary>
+</member>
+<member name="P:XPN.Numalet.Decimales">
+ <summary>
+ Indica la cantidad de decimales que se pasarán a entero para la conversión
+ </summary>
+ <remarks>Esta propiedad cambia al cambiar MascaraDecimal por un valor que empieze con '0'</remarks>
+</member>
+<member name="P:XPN.Numalet.CultureInfo">
+ <summary>
+ Objeto CultureInfo utilizado para convertir las cadenas de entrada en números
+ </summary>
+</member>
+<member name="P:XPN.Numalet.SeparadorDecimalSalida">
+ <summary>
+ Indica la cadena a intercalar entre la parte entera y la decimal del número
+ </summary>
+</member>
+<member name="P:XPN.Numalet.MascaraSalidaDecimal">
+ <summary>
+ Indica el formato que se le dara a la parte decimal del número
+ </summary>
+</member>
+<member name="P:XPN.Numalet.LetraCapital">
+ <summary>
+ Indica si la primera letra del resultado debe estár en mayúscula
+ </summary>
+</member>
+<member name="P:XPN.Numalet.ConvertirDecimales">
+ <summary>
+ Indica si se deben convertir los decimales a su expresión nominal
+ </summary>
+</member>
+<member name="P:XPN.Numalet.ApocoparUnoParteEntera">
+ <summary>
+ Indica si de debe cambiar "uno" por "un" en las unidades.
+ </summary>
+</member>
+<member name="P:XPN.Numalet.ApocoparUnoParteDecimal">
+ <summary>
+ Determina si se debe apococopar el "uno" en la parte decimal
+ </summary>
+ <remarks>El valor de esta propiedad cambia al setear ConvertirDecimales</remarks>
+</member>
+</members>
+</doc>
